@@ -3,6 +3,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import User from './User.jsx'
 
 //const element = <h1>React is {5+5} times better with JSX</h1>
 /* const firstNumber = 5.5
@@ -21,9 +22,8 @@ if (numero > 10) {
 const element = (
   <>
     <p className='class-p'>{texto} parrafo</p>
-    <p className='class-p'>{numero > 10 ? "Adios" : "Hola"} parrafo</p>
+    <p className='class-p'>{numero > 10 ? "Adios" : "Hola "} parrafo</p>
   </>
-
 )
 
 createRoot(document.getElementById('root')).render(
@@ -34,7 +34,9 @@ createRoot(document.getElementById('root')).render(
   //<h1>Hello vite + React</h1>, // Con JSX
 
   //React.createElement('h1', null, 'Hello vite + React') // Sin el JSX
-  element,
+  //element,
 
-  <input placeholder={placeholder} size={size} disabled={!isEnabled} />
+  //<input placeholder={placeholder} size={size} disabled={!isEnabled} />
+
+  <User />
 )
