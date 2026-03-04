@@ -12,10 +12,16 @@ const isEnabled = true
 const placeholder = "other value"
 const size = 50
 
+const numero = 15
+let texto = "Hola"
+if (numero > 10) {
+  texto = "Adios"
+}
+
 const element = (
   <>
-    <p>Un parrafo</p>
-    <p>Segundo parrafo</p>
+    <p className='class-p'>{texto} parrafo</p>
+    <p className='class-p'>{numero > 10 ? "Adios" : "Hola"} parrafo</p>
   </>
 
 )
